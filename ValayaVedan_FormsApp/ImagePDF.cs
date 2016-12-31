@@ -11,7 +11,7 @@ using System.Text;
 using System.Windows.Forms;
 using Tesseract;
 
-namespace vvtest
+namespace valaya_vedan
 {
     public partial class ImagePDF : Form
     {

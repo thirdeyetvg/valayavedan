@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valaya Vedan Forms App", "vvtest\Valaya Vedan Forms App.csproj", "{A501E518-32B5-459F-8534-65769484B3C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valaya Vedan Forms App", "ValayaVedan_FormsApp\Valaya Vedan Forms App.csproj", "{294FADEA-F385-4367-864E-F0E79BC9DC2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A501E518-32B5-459F-8534-65769484B3C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A501E518-32B5-459F-8534-65769484B3C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A501E518-32B5-459F-8534-65769484B3C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A501E518-32B5-459F-8534-65769484B3C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{294FADEA-F385-4367-864E-F0E79BC9DC2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{294FADEA-F385-4367-864E-F0E79BC9DC2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{294FADEA-F385-4367-864E-F0E79BC9DC2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{294FADEA-F385-4367-864E-F0E79BC9DC2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

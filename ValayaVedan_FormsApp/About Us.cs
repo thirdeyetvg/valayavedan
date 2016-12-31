@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace vvtest
+namespace valaya_vedan
 {
     public partial class AboutUs : Form
     {

@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A501E518-32B5-459F-8534-65769484B3C8}</ProjectGuid>
+    <ProjectGuid>{294FADEA-F385-4367-864E-F0E79BC9DC2D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>vvtest</RootNamespace>

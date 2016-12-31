@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 
-namespace vvtest
+namespace valaya_vedan
 {
     public partial class Help : Form
     {

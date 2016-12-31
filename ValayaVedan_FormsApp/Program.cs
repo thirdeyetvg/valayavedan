@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace vvtest
+namespace valaya_vedan
 {
     static class Program
     {

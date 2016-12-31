@@ -1,4 +1,4 @@
-﻿namespace vvtest
+﻿namespace valaya_vedan
 {
     partial class RootForm
     {
