@@ -262,15 +262,15 @@ namespace valaya_vedan
             {
                 System.IO.Stream myStream1;
                 String filePath;
-                saveFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
-                saveFileDialog1.FilterIndex = 1;
+                saveTextFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+                saveTextFileDialog.FilterIndex = 1;
                 try
                 {
-                    if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                    if (saveTextFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        if ((myStream1 = saveFileDialog1.OpenFile()) != null)
+                        if ((myStream1 = saveTextFileDialog.OpenFile()) != null)
                         {
-                            filePath = saveFileDialog1.FileName;
+                            filePath = saveTextFileDialog.FileName;
                             inputText.SaveFile(myStream1, RichTextBoxStreamType.PlainText);
                             DialogResult rslt = MessageBox.Show("Do you want to open output file?", "Open file", MessageBoxButtons.YesNo);
                             if (rslt == DialogResult.Yes)
@@ -493,14 +493,14 @@ namespace valaya_vedan
 
             {
                 extarctingMsg.Text = "";
-                openFileDialog1.FileName = "";
-                openFileDialog1.Filter = "PDF Files|*.pdf|Text Files|*.txt|RTF Files|*.rtf";
-                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                openPDFFileDialog.FileName = "";
+                openPDFFileDialog.Filter = "PDF Files|*.pdf|Text Files|*.txt|RTF Files|*.rtf";
+                if (openPDFFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     //Clear results
                     inputText.Text = "";
                     //Get the filename and extension
-                    string strFileName = openFileDialog1.FileName;
+                    string strFileName = openPDFFileDialog.FileName;
                     string strExtension = strFileName.Substring(strFileName.LastIndexOf(".") + 1);
                     //Validate filetype
                     if (strExtension.ToUpper() == "PDF")
@@ -549,13 +549,13 @@ namespace valaya_vedan
         private void saveExtractedTextToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.IO.Stream myStream1;
-            saveFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
-            saveFileDialog1.FilterIndex = 1;        
+            saveTextFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            saveTextFileDialog.FilterIndex = 1;        
             try
             {
-                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                if (saveTextFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    if ((myStream1 = saveFileDialog1.OpenFile()) != null)
+                    if ((myStream1 = saveTextFileDialog.OpenFile()) != null)
                     {
                         inputText.SaveFile(myStream1, RichTextBoxStreamType.PlainText);
                     }
@@ -571,15 +571,15 @@ namespace valaya_vedan
         {
             System.IO.Stream myStream1;
             String filePath;
-            saveFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
-            saveFileDialog1.FilterIndex = 1;
+            saveTextFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            saveTextFileDialog.FilterIndex = 1;
             try
             {
-                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                if (saveTextFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    if ((myStream1 = saveFileDialog1.OpenFile()) != null)
+                    if ((myStream1 = saveTextFileDialog.OpenFile()) != null)
                     {
-                        filePath = saveFileDialog1.FileName;
+                        filePath = saveTextFileDialog.FileName;
                         outputText.SaveFile(myStream1, RichTextBoxStreamType.UnicodePlainText);
                         myStream1.Close();
                         DialogResult rslt = MessageBox.Show("Do you want to open output file?", "Open file", MessageBoxButtons.YesNo);
@@ -636,14 +636,14 @@ namespace valaya_vedan
 
             {
                 extarctingMsg.Text = "";
-                openFileDialog1.FileName = "";
-                openFileDialog1.Filter = "PDF Files|*.pdf|Text Files|*.txt|RTF Files|*.rtf";
-                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                openPDFFileDialog.FileName = "";
+                openPDFFileDialog.Filter = "PDF Files|*.pdf|Text Files|*.txt|RTF Files|*.rtf";
+                if (openPDFFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     //Clear results
                     inputText.Text = "";
                     //Get the filename and extension
-                    string strFileName = openFileDialog1.FileName;
+                    string strFileName = openPDFFileDialog.FileName;
                     string strExtension = strFileName.Substring(strFileName.LastIndexOf(".") + 1);
                     //Validate filetype
                     if (strExtension.ToUpper() == "PDF")

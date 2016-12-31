@@ -36,7 +36,7 @@ namespace valaya_vedan
             this.languageList = new System.Windows.Forms.ComboBox();
             this.fontList = new System.Windows.Forms.ComboBox();
             this.extractText = new System.Windows.Forms.Button();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.openPDFFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.extarctingMsg = new System.Windows.Forms.Label();
             this.saveOutput = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@ namespace valaya_vedan
             this.openHelpFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.saveTextFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.Input = new System.Windows.Forms.Label();
             this.output = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -137,10 +137,6 @@ namespace valaya_vedan
             this.extractText.Text = "Extract text from file";
             this.extractText.UseVisualStyleBackColor = true;
             this.extractText.Click += new System.EventHandler(this.extract_Click);
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // extarctingMsg
             // 
@@ -380,7 +376,7 @@ namespace valaya_vedan
         private System.Windows.Forms.ComboBox languageList;
         private System.Windows.Forms.ComboBox fontList;
         private System.Windows.Forms.Button extractText;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openPDFFileDialog;
         private System.Windows.Forms.Label extarctingMsg;
         private System.Windows.Forms.Button saveOutput;
         private System.Windows.Forms.Label label1;
@@ -394,7 +390,7 @@ namespace valaya_vedan
         private System.Windows.Forms.ToolStripMenuItem saveExtractedTextToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem changeLanguageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem changeFontToolStripMenuItem;
-        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveTextFileDialog;
         private System.Windows.Forms.Label Input;
         private System.Windows.Forms.Label output;
         private System.Windows.Forms.ProgressBar progressBar1;

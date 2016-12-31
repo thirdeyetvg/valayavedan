@@ -9,6 +9,7 @@ using System.Windows.Forms;
 
 namespace valaya_vedan
 {
+    // TODO Need to make this automatic
     public partial class SetJavaPath : Form
     {
         private string javaPath;
