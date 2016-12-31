@@ -26,18 +26,6 @@ namespace valaya_vedan.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string FirstUserSetting {
-            get {
-                return ((string)(this["FirstUserSetting"]));
-            }
-            set {
-                this["FirstUserSetting"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string JavaPath {
             get {
                 return ((string)(this["JavaPath"]));
