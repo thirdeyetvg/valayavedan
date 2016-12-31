@@ -8,7 +8,7 @@
     <ProjectGuid>{294FADEA-F385-4367-864E-F0E79BC9DC2D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>vvtest</RootNamespace>
+    <RootNamespace>valaya_vedan</RootNamespace>
     <AssemblyName>Valaya Vedan v1.1 %28Beta Version%29</AssemblyName>
     <ApplicationIcon>icon.ico</ApplicationIcon>
     <TargetZone>LocalIntranet</TargetZone>
