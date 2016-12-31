@@ -21,7 +21,7 @@ namespace valaya_vedan
             try
             {
                 Directory.SetCurrentDirectory(Application.StartupPath);
-                HelpContents.LoadFile("Help.rtf",RichTextBoxStreamType.RichText);
+                HelpContents.LoadFile(@"Help.rtf",RichTextBoxStreamType.RichText);
             }
             catch (Exception ex)
             {

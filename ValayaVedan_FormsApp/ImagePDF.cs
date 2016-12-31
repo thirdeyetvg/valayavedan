@@ -17,10 +17,10 @@ namespace valaya_vedan
     {
         public string filePath { get; private set; }
 
-        string outputFileFolder = "C:\\temp\\";
+        string outputFileFolder = Path.GetTempPath()+"\\";
         string outputFileName = "sample.jpg";
         string javaExePath = "java.exe";
-        string jarPath = "C:\\temp\\PDFImageExtractor.jar";
+        string jarPath = Path.Combine(Application.StartupPath, "PDFImageExtractor.jar");
 
         public ImagePDF()
         {
@@ -43,7 +43,7 @@ namespace valaya_vedan
             extarctingMsg.Text = "Processing Image..";
             Console.WriteLine("Changing pagenumber to: " + pageNumberUpDown.Value);
             Console.WriteLine("-jar " + jarPath + " " + filePath + " " + pageNumberUpDown.Value + " " + outputFileFolder + " " + outputFileName);
-            var processInfo = new ProcessStartInfo(javaExePath, "-jar " + jarPath + " \""+ filePath + "\" " + pageNumberUpDown.Value + " " + outputFileFolder + " " + outputFileName)
+            var processInfo = new ProcessStartInfo(javaExePath, "-jar " + jarPath + " \""+ filePath + "\" " + pageNumberUpDown.Value + " \"" + outputFileFolder + "\" " + outputFileName)
             {
                 CreateNoWindow = true,
                 UseShellExecute = false
@@ -92,6 +92,11 @@ namespace valaya_vedan
         }
 
         private void openFile_Click(object sender, EventArgs e)
+        {
+            openPDFFile();
+        }
+
+        private void openPDFFile()
         {
             Directory.SetCurrentDirectory(Application.StartupPath);
 

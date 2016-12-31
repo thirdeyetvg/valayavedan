@@ -42,11 +42,11 @@
             this.meanConfidenceLabel = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.setupJavaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openHelpFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.setupJavaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pageNumberUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pdfSourceImage)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -163,7 +163,6 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.editToolStripMenuItem,
             this.settingsToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -174,31 +173,11 @@
             // 
             // fileToolStripMenuItem
             // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openFileToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.editToolStripMenuItem.Text = "Edit";
-            // 
-            // settingsToolStripMenuItem
-            // 
-            this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.setupJavaToolStripMenuItem});
-            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.settingsToolStripMenuItem.Text = "Settings";
-            // 
-            // setupJavaToolStripMenuItem
-            // 
-            this.setupJavaToolStripMenuItem.Name = "setupJavaToolStripMenuItem";
-            this.setupJavaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.J)));
-            this.setupJavaToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.setupJavaToolStripMenuItem.Text = "Setup Java";
-            this.setupJavaToolStripMenuItem.Click += new System.EventHandler(this.setupJavaToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -215,6 +194,29 @@
             this.openHelpFileToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.openHelpFileToolStripMenuItem.Text = "Open Help File";
             this.openHelpFileToolStripMenuItem.Click += new System.EventHandler(this.openHelpFileToolStripMenuItem_Click);
+            // 
+            // openFileToolStripMenuItem
+            // 
+            this.openFileToolStripMenuItem.Name = "openFileToolStripMenuItem";
+            this.openFileToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.openFileToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.openFileToolStripMenuItem.Text = "Open File";
+            // 
+            // setupJavaToolStripMenuItem
+            // 
+            this.setupJavaToolStripMenuItem.Name = "setupJavaToolStripMenuItem";
+            this.setupJavaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.J)));
+            this.setupJavaToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.setupJavaToolStripMenuItem.Text = "Setup Java";
+            this.setupJavaToolStripMenuItem.Click += new System.EventHandler(this.setupJavaToolStripMenuItem_Click);
+            // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.setupJavaToolStripMenuItem});
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // ImagePDF
             // 
@@ -235,7 +237,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "ImagePDF";
-            this.Text = "Valaya Vedan";
+            this.Text = "Valaya Vedan - Image PDF reader";
             this.Load += new System.EventHandler(this.ImagePDF_Load);
             this.Shown += new System.EventHandler(this.ImagePDF_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pageNumberUpDown)).EndInit();
@@ -263,10 +265,10 @@
         private System.Windows.Forms.Label meanConfidenceLabel;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem setupJavaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openHelpFileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openFileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem setupJavaToolStripMenuItem;
     }
 }
