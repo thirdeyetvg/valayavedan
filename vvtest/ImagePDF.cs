@@ -19,7 +19,7 @@ namespace vvtest
 
         string outputFileFolder = "C:\\temp\\";
         string outputFileName = "sample.jpg";
-        string javaPath = "C:\\Program Files\\Java\\jre1.8.0_111\\bin\\java.exe";
+        string javaExePath = "java.exe";
         string jarPath = "C:\\temp\\PDFImageExtractor.jar";
 
         public ImagePDF()
@@ -43,7 +43,7 @@ namespace vvtest
             extarctingMsg.Text = "Processing Image..";
             Console.WriteLine("Changing pagenumber to: " + pageNumberUpDown.Value);
             Console.WriteLine("-jar " + jarPath + " " + filePath + " " + pageNumberUpDown.Value + " " + outputFileFolder + " " + outputFileName);
-            var processInfo = new ProcessStartInfo(javaPath, "-jar " + jarPath + " \""+ filePath + "\" " + pageNumberUpDown.Value + " " + outputFileFolder + " " + outputFileName)
+            var processInfo = new ProcessStartInfo(javaExePath, "-jar " + jarPath + " \""+ filePath + "\" " + pageNumberUpDown.Value + " " + outputFileFolder + " " + outputFileName)
             {
                 CreateNoWindow = true,
                 UseShellExecute = false
@@ -66,7 +66,7 @@ namespace vvtest
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Could not convert image to text");
+                MessageBox.Show("Could not convert image to text: " + ex.Message);
             }
             extarctingMsg.Text = "Image Processed!!";
         }
@@ -155,13 +155,47 @@ namespace vvtest
 
         private void setupJavaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            showSetJavaPathForm();
+        }
 
+        private void showSetJavaPathForm()
+        {
+            if(new SetJavaPath().ShowDialog() == DialogResult.OK)
+            {
+                if (javaPathExists())
+                {
+                    Console.Write("Java path set");
+                }
+            }
         }
 
         private void openHelpFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Directory.SetCurrentDirectory(Application.StartupPath);
             Process.Start(@"Help.rtf");
+        }
+
+        private void ImagePDF_Shown(object sender, EventArgs e)
+        {
+            if (!javaPathExists())
+            {
+                MessageBox.Show("JAVA path is not set. For proper functioning of the application, JAVA path has to be explicitly set. Click 'OK' to set the JAVA path.\n" +
+                    "If you want to set it later, use Settings in Menu options.");
+                showSetJavaPathForm();
+            }
+        }
+
+        private bool javaPathExists()
+        {
+            // Check if Java path is set
+            string javaPath = Properties.Settings.Default.JavaPath;
+            if (javaPath != null && !javaPath.Equals(""))
+            {
+                setupJavaToolStripMenuItem.Checked = true;
+                javaExePath = javaPath;
+                return true;
+            }
+            return false;
         }
     }
 }

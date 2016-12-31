@@ -16,6 +16,11 @@ namespace vvtest
             InitializeComponent();
         }
 
+        private void RootForm_Load(object sender, EventArgs e)
+        {
+            
+        }
+
         private void readImagePDFBtn_Click(object sender, EventArgs e)
         {
             ImagePDF window = new ImagePDF();
@@ -26,6 +31,11 @@ namespace vvtest
         {
             ValayaVedanv window = new ValayaVedanv();
             window.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

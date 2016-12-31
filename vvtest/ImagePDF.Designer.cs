@@ -195,7 +195,8 @@
             // setupJavaToolStripMenuItem
             // 
             this.setupJavaToolStripMenuItem.Name = "setupJavaToolStripMenuItem";
-            this.setupJavaToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.setupJavaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.J)));
+            this.setupJavaToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.setupJavaToolStripMenuItem.Text = "Setup Java";
             this.setupJavaToolStripMenuItem.Click += new System.EventHandler(this.setupJavaToolStripMenuItem_Click);
             // 
@@ -236,6 +237,7 @@
             this.Name = "ImagePDF";
             this.Text = "Valaya Vedan";
             this.Load += new System.EventHandler(this.ImagePDF_Load);
+            this.Shown += new System.EventHandler(this.ImagePDF_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pageNumberUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pdfSourceImage)).EndInit();
             this.menuStrip1.ResumeLayout(false);

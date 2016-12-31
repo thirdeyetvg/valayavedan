@@ -125,6 +125,12 @@
     <Compile Include="RootForm.Designer.cs">
       <DependentUpon>RootForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SetJavaPath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetJavaPath.Designer.cs">
+      <DependentUpon>SetJavaPath.cs</DependentUpon>
+    </Compile>
     <Compile Include="Valaya Vedan v1.1 %28Beta Version%29.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RootForm.resx">
       <DependentUpon>RootForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetJavaPath.resx">
+      <DependentUpon>SetJavaPath.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Valaya Vedan v1.1 %28Beta Version%29.resx">
       <SubType>Designer</SubType>
