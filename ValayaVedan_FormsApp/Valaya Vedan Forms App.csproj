@@ -21,6 +21,7 @@
     <OldToolsVersion>3.5</OldToolsVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -35,7 +36,6 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -113,11 +113,11 @@
     <Compile Include="Help.Designer.cs">
       <DependentUpon>Help.cs</DependentUpon>
     </Compile>
-    <Compile Include="ImagePDF.cs">
+    <Compile Include="PDFImageExtractor_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ImagePDF.Designer.cs">
-      <DependentUpon>ImagePDF.cs</DependentUpon>
+    <Compile Include="PDFImageExtractor_Form.Designer.cs">
+      <DependentUpon>PDFImageExtractor_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Splash Screen.cs">
       <SubType>Form</SubType>
@@ -125,11 +125,11 @@
     <Compile Include="Splash Screen.designer.cs">
       <DependentUpon>Splash Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Valaya Vedan v1.1 %28Beta Version%29.cs">
+    <Compile Include="PDFTextExtractor_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Valaya Vedan v1.1 %28Beta Version%29.Designer.cs">
-      <DependentUpon>Valaya Vedan v1.1 %28Beta Version%29.cs</DependentUpon>
+    <Compile Include="PDFTextExtractor_Form.Designer.cs">
+      <DependentUpon>PDFTextExtractor_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="SetJavaPath.cs">
       <SubType>Form</SubType>
@@ -157,14 +157,14 @@
       <SubType>Designer</SubType>
       <DependentUpon>Help.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ImagePDF.resx">
-      <DependentUpon>ImagePDF.cs</DependentUpon>
+    <EmbeddedResource Include="PDFImageExtractor_Form.resx">
+      <DependentUpon>PDFImageExtractor_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Splash Screen.resx">
       <DependentUpon>Splash Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Valaya Vedan v1.1 %28Beta Version%29.resx">
-      <DependentUpon>Valaya Vedan v1.1 %28Beta Version%29.cs</DependentUpon>
+    <EmbeddedResource Include="PDFTextExtractor_Form.resx">
+      <DependentUpon>PDFTextExtractor_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SetJavaPath.resx">
       <DependentUpon>SetJavaPath.cs</DependentUpon>

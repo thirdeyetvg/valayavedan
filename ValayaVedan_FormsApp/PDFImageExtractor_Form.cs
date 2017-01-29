@@ -13,7 +13,7 @@ using Tesseract;
 
 namespace valaya_vedan
 {
-    public partial class ImagePDF : Form
+    public partial class PDFImageExtractor_Form : Form
     {
         public string filePath { get; private set; }
 
@@ -22,7 +22,7 @@ namespace valaya_vedan
         string javaExePath = "java.exe";
         string jarPath = Path.Combine(Application.StartupPath, "PDFImageExtractor.jar");
 
-        public ImagePDF()
+        public PDFImageExtractor_Form()
         {
             InitializeComponent();
         }

@@ -25,7 +25,7 @@ namespace valaya_vedan
 
         private void readImagePDFBtn_Click(object sender, EventArgs e)
         {
-            ImagePDF window = new ImagePDF();
+            PDFImageExtractor_Form window = new PDFImageExtractor_Form();
             window.Show();
         }
 
@@ -70,7 +70,7 @@ namespace valaya_vedan
 
         private void readImagePDFToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ImagePDF window = new ImagePDF();
+            PDFImageExtractor_Form window = new PDFImageExtractor_Form();
             window.Show();
         }
 

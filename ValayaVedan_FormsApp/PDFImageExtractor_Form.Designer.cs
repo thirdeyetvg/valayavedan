@@ -1,6 +1,6 @@
 ﻿namespace valaya_vedan
 {
-    partial class ImagePDF
+    partial class PDFImageExtractor_Form
     {
         /// <summary>
         /// Required designer variable.
