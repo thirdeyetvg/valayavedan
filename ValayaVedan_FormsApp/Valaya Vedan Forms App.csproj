@@ -95,28 +95,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Change Language and font.cs">
+    <Compile Include="app_modals\Change Language and font.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Change Language and font.designer.cs">
+    <Compile Include="app_modals\Change Language and font.designer.cs">
       <DependentUpon>Change Language and font.cs</DependentUpon>
     </Compile>
-    <Compile Include="About Us.cs">
+    <Compile Include="app_modals\About Us.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="About Us.Designer.cs">
+    <Compile Include="app_modals\About Us.Designer.cs">
       <DependentUpon>About Us.cs</DependentUpon>
     </Compile>
-    <Compile Include="Help.cs">
+    <Compile Include="app_modals\Help.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Help.Designer.cs">
+    <Compile Include="app_modals\Help.Designer.cs">
       <DependentUpon>Help.cs</DependentUpon>
     </Compile>
-    <Compile Include="PDFImageExtractor_Form.cs">
+    <Compile Include="app_screens\PDFImageExtractor_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PDFImageExtractor_Form.Designer.cs">
+    <Compile Include="app_screens\PDFImageExtractor_Form.Designer.cs">
       <DependentUpon>PDFImageExtractor_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Splash Screen.cs">
@@ -125,53 +125,53 @@
     <Compile Include="Splash Screen.designer.cs">
       <DependentUpon>Splash Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="PDFTextExtractor_Form.cs">
+    <Compile Include="Landing Screen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PDFTextExtractor_Form.Designer.cs">
+    <Compile Include="Landing Screen.Designer.cs">
+      <DependentUpon>Landing Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="app_modals\Set Java Path.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app_modals\Set Java Path.Designer.cs">
+      <DependentUpon>Set Java Path.cs</DependentUpon>
+    </Compile>
+    <Compile Include="app_screens\PDFTextExtractor_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app_screens\PDFTextExtractor_Form.Designer.cs">
       <DependentUpon>PDFTextExtractor_Form.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SetJavaPath.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SetJavaPath.Designer.cs">
-      <DependentUpon>SetJavaPath.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TextPDF.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TextPDF.Designer.cs">
-      <DependentUpon>TextPDF.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Change Language and font.resx">
+    <EmbeddedResource Include="app_modals\Change Language and font.resx">
       <DependentUpon>Change Language and font.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="About Us.resx">
+    <EmbeddedResource Include="app_modals\About Us.resx">
       <SubType>Designer</SubType>
       <DependentUpon>About Us.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Help.resx">
+    <EmbeddedResource Include="app_modals\Help.resx">
       <SubType>Designer</SubType>
       <DependentUpon>Help.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PDFImageExtractor_Form.resx">
+    <EmbeddedResource Include="app_screens\PDFImageExtractor_Form.resx">
       <DependentUpon>PDFImageExtractor_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Splash Screen.resx">
       <DependentUpon>Splash Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PDFTextExtractor_Form.resx">
-      <DependentUpon>PDFTextExtractor_Form.cs</DependentUpon>
+    <EmbeddedResource Include="Landing Screen.resx">
+      <DependentUpon>Landing Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SetJavaPath.resx">
-      <DependentUpon>SetJavaPath.cs</DependentUpon>
+    <EmbeddedResource Include="app_modals\Set Java Path.resx">
+      <DependentUpon>Set Java Path.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TextPDF.resx">
+    <EmbeddedResource Include="app_screens\PDFTextExtractor_Form.resx">
       <SubType>Designer</SubType>
-      <DependentUpon>TextPDF.cs</DependentUpon>
+      <DependentUpon>PDFTextExtractor_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -253,6 +253,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
