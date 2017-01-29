@@ -119,6 +119,12 @@
     <Compile Include="ImagePDF.Designer.cs">
       <DependentUpon>ImagePDF.cs</DependentUpon>
     </Compile>
+    <Compile Include="Splash Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash Screen.designer.cs">
+      <DependentUpon>Splash Screen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Valaya Vedan v1.1 %28Beta Version%29.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,12 +143,6 @@
     <Compile Include="TextPDF.Designer.cs">
       <DependentUpon>TextPDF.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSplash.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSplash.designer.cs">
-      <DependentUpon>frmSplash.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Change Language and font.resx">
@@ -160,6 +160,9 @@
     <EmbeddedResource Include="ImagePDF.resx">
       <DependentUpon>ImagePDF.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Splash Screen.resx">
+      <DependentUpon>Splash Screen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Valaya Vedan v1.1 %28Beta Version%29.resx">
       <DependentUpon>Valaya Vedan v1.1 %28Beta Version%29.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,10 +172,6 @@
     <EmbeddedResource Include="TextPDF.resx">
       <SubType>Designer</SubType>
       <DependentUpon>TextPDF.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSplash.resx">
-      <DependentUpon>frmSplash.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
