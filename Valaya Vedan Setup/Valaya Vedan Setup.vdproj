@@ -824,15 +824,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Valaya Vedan"
-        "ProductCode" = "8:{4D944BDB-81C0-4AC8-8CE6-39F033B48EAB}"
-        "PackageCode" = "8:{7B0FC12D-9376-47C7-A704-3F113082B00F}"
+        "ProductCode" = "8:{D78AAAEB-8C0E-430D-871B-B8EB9804AF07}"
+        "PackageCode" = "8:{7C02C7F8-192F-49DD-9C59-E1D0D719C125}"
         "UpgradeCode" = "8:{858421FA-4629-4B4C-AB7E-ED4336F9F64F}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:0.2.2022"
+        "ProductVersion" = "8:0.2.2023"
         "Manufacturer" = "8:Thirdeye TVG"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -1388,7 +1388,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_447934EA9B2A4E2489CC8DB5A9B78AB6"
             {
-            "SourcePath" = "8:..\\ValayaVedan_FormsApp\\obj\\Release\\Valaya Vedan v1.1 (Beta Version).exe"
+            "SourcePath" = "8:..\\ValayaVedan_FormsApp\\obj\\Debug\\Valaya Vedan v1.1 (Beta Version).exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_A393F982E99B4E4DB0D2F550D8CE28F3"
