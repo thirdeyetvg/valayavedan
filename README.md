@@ -7,7 +7,7 @@ Valaya vedan supports reading content from Text PDF and Image PDF.
 Image PDFs will have the pages as scanned images. Valaya Vedan allows in loading the Image PDF and converting the image to text. In the background, Tesseract OCR is used to convert the images. For now PDF Image extraction is being done in Java. So Java is a dependency for reading image PDFs. One time setup of Java path is needed. If the Java path is not set, user will be prompted to setup the Java path (we'll make the detection automated soon). Use this URL https://java.com/en/download/ to download JRE.
 Java path will be of this format, 
 C:\Program Files (x86)\Java\jre1.8.0_version\bin
-Once Image PDF file is opened, pagination control will come up. Upon navigation to a paarticular page, the text processing will be done automatically. Use arrow keys to read the content within the page.
+Once Image PDF file is opened, pagination control will come up. Upon navigation to a particular page, the text processing will be done automatically. Use arrow keys to read the content within the page.
 We'll be adding mode languages soon.
 # Reading Text PDF files
 Supported languages: Tamil and Hindi.
