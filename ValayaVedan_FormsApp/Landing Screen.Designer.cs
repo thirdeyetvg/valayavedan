@@ -144,7 +144,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "RootForm";
-            this.Text = "Valaya Vedan v1.1 (Beta Version)";
+            this.Text = "Valaya Vedan";
             this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.RootForm_HelpButtonClicked);
             this.Load += new System.EventHandler(this.RootForm_Load_1);
             this.menuStrip1.ResumeLayout(false);

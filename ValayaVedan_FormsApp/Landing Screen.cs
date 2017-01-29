@@ -40,7 +40,7 @@ namespace valaya_vedan
             frmSplash SplashScreen = new frmSplash();
             SplashScreen.Show();
             Application.DoEvents();
-            System.Threading.Thread.Sleep(3000);
+            System.Threading.Thread.Sleep(2000);
             SplashScreen.Hide();
         }
 

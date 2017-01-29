@@ -38,7 +38,7 @@ namespace valaya_vedan
 
         private void linkForJavaDownload_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.oracle.com/technetwork/java/javase/downloads/index.html");
+            System.Diagnostics.Process.Start("https://java.com/en/download/");
         }
 
         private void setJavaPathOkBtn_Click(object sender, EventArgs e)
