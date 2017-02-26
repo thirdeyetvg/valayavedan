@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using TiffViewer;
 using ValayaVedan;
 
 namespace valaya_vedan
@@ -78,6 +79,13 @@ namespace valaya_vedan
         {
             ValayaVedanv window = new ValayaVedanv();
             window.Show();
+        }
+
+        private void readImageBtn_Click(object sender, EventArgs e)
+        {
+            // Application.Run(new MainForm());
+            ImageReaderForm mainForm = new ImageReaderForm();
+            mainForm.Show();
         }
     }
 }

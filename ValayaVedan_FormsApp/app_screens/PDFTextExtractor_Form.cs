@@ -18,6 +18,7 @@ namespace valaya_vedan
 {
     public partial class ValayaVedanv : Form
     {
+        // Refactor these
         String[] Me=new String[2000];
         String[] Unicode = new String[2000];
         String[] UnicodeEquv = new String[2000];

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valaya Vedan Forms App", "V
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Valaya Vedan Setup", "Valaya Vedan Setup\Valaya Vedan Setup.vdproj", "{3E45CB07-23EC-4DAF-9402-13FAB3D70FFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiffViewerLib", "TiffViewerLib\TiffViewerLib.csproj", "{2803ADDC-3241-4B62-92D0-E6BA978610AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{294FADEA-F385-4367-864E-F0E79BC9DC2D}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{3E45CB07-23EC-4DAF-9402-13FAB3D70FFB}.Debug|Any CPU.ActiveCfg = Debug
 		{3E45CB07-23EC-4DAF-9402-13FAB3D70FFB}.Release|Any CPU.ActiveCfg = Release
+		{2803ADDC-3241-4B62-92D0-E6BA978610AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2803ADDC-3241-4B62-92D0-E6BA978610AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2803ADDC-3241-4B62-92D0-E6BA978610AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2803ADDC-3241-4B62-92D0-E6BA978610AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

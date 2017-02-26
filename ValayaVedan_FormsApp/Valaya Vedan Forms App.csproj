@@ -119,6 +119,12 @@
     <Compile Include="app_screens\PDFImageExtractor_Form.Designer.cs">
       <DependentUpon>PDFImageExtractor_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImageReader_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageReader_Form.Designer.cs">
+      <DependentUpon>ImageReader_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Splash Screen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="app_screens\PDFImageExtractor_Form.resx">
       <DependentUpon>PDFImageExtractor_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageReader_Form.resx">
+      <DependentUpon>ImageReader_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Splash Screen.resx">
       <DependentUpon>Splash Screen.cs</DependentUpon>
@@ -253,7 +262,12 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\TiffViewerLib\TiffViewerLib.csproj">
+      <Project>{2803addc-3241-4b62-92d0-e6ba978610ae}</Project>
+      <Name>TiffViewerLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

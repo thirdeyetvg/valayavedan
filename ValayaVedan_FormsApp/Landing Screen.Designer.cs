@@ -38,12 +38,13 @@
             this.openHelpFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.readImageBtn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // readImagePDFBtn
             // 
-            this.readImagePDFBtn.Location = new System.Drawing.Point(67, 60);
+            this.readImagePDFBtn.Location = new System.Drawing.Point(67, 43);
             this.readImagePDFBtn.Name = "readImagePDFBtn";
             this.readImagePDFBtn.Size = new System.Drawing.Size(143, 49);
             this.readImagePDFBtn.TabIndex = 0;
@@ -53,7 +54,7 @@
             // 
             // readTextPDFBtn
             // 
-            this.readTextPDFBtn.Location = new System.Drawing.Point(67, 137);
+            this.readTextPDFBtn.Location = new System.Drawing.Point(67, 117);
             this.readTextPDFBtn.Name = "readTextPDFBtn";
             this.readTextPDFBtn.Size = new System.Drawing.Size(143, 48);
             this.readTextPDFBtn.TabIndex = 1;
@@ -132,11 +133,22 @@
             this.aboutUsToolStripMenuItem.Text = "About Us";
             this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.aboutUsToolStripMenuItem_Click);
             // 
+            // readImageBtn
+            // 
+            this.readImageBtn.Location = new System.Drawing.Point(67, 195);
+            this.readImageBtn.Name = "readImageBtn";
+            this.readImageBtn.Size = new System.Drawing.Size(143, 48);
+            this.readImageBtn.TabIndex = 25;
+            this.readImageBtn.Text = "Read Images";
+            this.readImageBtn.UseVisualStyleBackColor = true;
+            this.readImageBtn.Click += new System.EventHandler(this.readImageBtn_Click);
+            // 
             // RootForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.readImageBtn);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.readTextPDFBtn);
             this.Controls.Add(this.readImagePDFBtn);
@@ -166,5 +178,6 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem readImagePDFToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem readTextPDFToolStripMenuItem;
+        private System.Windows.Forms.Button readImageBtn;
     }
 }
