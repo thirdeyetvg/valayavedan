@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using valaya_vedan.app_screens;
 using ValayaVedan;
 
 namespace valaya_vedan
@@ -40,7 +41,7 @@ namespace valaya_vedan
             frmSplash SplashScreen = new frmSplash();
             SplashScreen.Show();
             Application.DoEvents();
-            System.Threading.Thread.Sleep(2000);
+            System.Threading.Thread.Sleep(1000);
             SplashScreen.Hide();
         }
 
@@ -77,6 +78,18 @@ namespace valaya_vedan
         private void readTextPDFToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ValayaVedanv window = new ValayaVedanv();
+            window.Show();
+        }
+
+        private void readImageBtn_Click(object sender, EventArgs e)
+        {
+            ImageTextExtractor_Form window = new ImageTextExtractor_Form();
+            window.Show();
+        }
+
+        private void readImageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ImageTextExtractor_Form window = new ImageTextExtractor_Form();
             window.Show();
         }
     }

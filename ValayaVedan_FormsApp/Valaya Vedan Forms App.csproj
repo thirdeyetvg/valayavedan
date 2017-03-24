@@ -113,12 +113,19 @@
     <Compile Include="app_modals\Help.Designer.cs">
       <DependentUpon>Help.cs</DependentUpon>
     </Compile>
+    <Compile Include="app_screens\ImageTextExtractor_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app_screens\ImageTextExtractor_Form.Designer.cs">
+      <DependentUpon>ImageTextExtractor_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="app_screens\PDFImageExtractor_Form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="app_screens\PDFImageExtractor_Form.Designer.cs">
       <DependentUpon>PDFImageExtractor_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="constants\AppConstants.cs" />
     <Compile Include="Splash Screen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +163,9 @@
     <EmbeddedResource Include="app_modals\Help.resx">
       <SubType>Designer</SubType>
       <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="app_screens\ImageTextExtractor_Form.resx">
+      <DependentUpon>ImageTextExtractor_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="app_screens\PDFImageExtractor_Form.resx">
       <DependentUpon>PDFImageExtractor_Form.cs</DependentUpon>
@@ -201,6 +211,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Content Include="tessdata\tam.traineddata">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tessdata\eng.traineddata">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

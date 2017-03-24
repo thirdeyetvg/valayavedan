@@ -34,5 +34,17 @@ namespace valaya_vedan.Properties {
                 this["JavaPath"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DefaultLanguage_ImgTE {
+            get {
+                return ((string)(this["DefaultLanguage_ImgTE"]));
+            }
+            set {
+                this["DefaultLanguage_ImgTE"] = value;
+            }
+        }
     }
 }
